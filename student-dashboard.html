@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Dashboard</title>
+
+<link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body id="top">
+
+<div class="sidebar">
+
+    <h2>EduPortal</h2>
+
+    <div class="profile-card">
+
+        <h3 id="userEmail">
+            Loading...
+        </h3>
+
+        <p id="userRole">
+            Student
+        </p>
+
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="#notesSection">📚 Notes</a>
+        </li>
+
+        <li>
+            <a href="#assignmentSection">📝 Assignments</a>
+        </li>
+
+        <li>
+            <a href="#marksSection">📊 Marks</a>
+        </li>
+
+        <li>
+            <a href="#top">👨‍🎓 Student</a>
+        </li>
+
+        <li>
+            <button id="darkBtn">
+                🌙 Dark Mode
+            </button>
+        </li>
+
+        <li>
+            <button id="logoutBtn">
+                Logout
+            </button>
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="main-content">
+
+    <h1>Student Dashboard</h1>
+
+    <div class="stats">
+
+        <div class="box">
+            Total Notes
+            <h2 id="noteCount">0</h2>
+        </div>
+
+        <div class="box">
+            Assignments
+            <h2 id="assignmentCount">0</h2>
+        </div>
+
+        <div class="box">
+            Marks
+            <h2 id="marksCount">0</h2>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <h2 id="notesSection">Available Notes</h2>
+
+    <div id="notesContainer"></div>
+
+    <hr>
+
+    <h2 id="assignmentSection">Assignments</h2>
+
+    <div id="assignmentList"></div>
+
+    <hr>
+
+    <h2 id="marksSection">Your Marks</h2>
+
+    <div id="marksList"></div>
+
+</div>
+
+<script type="module" src="js/student-protect.js"></script>
+
+<script type="module" src="js/profile.js"></script>
+
+<script type="module" src="js/counter.js"></script>
+
+<script type="module" src="js/student.js"></script>
+
+<script type="module" src="js/assignment-student.js"></script>
+
+<script type="module" src="js/marks.js"></script>
+
+<script type="module" src="js/logout.js"></script>
+
+<script src="js/darkmode.js"></script>
+
+</body>
+</html>

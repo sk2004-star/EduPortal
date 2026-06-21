@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Teacher Dashboard</title>
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body id="top">
+
+<div class="sidebar">
+
+    <h2>EduPortal</h2>
+
+    <div class="profile-box">
+
+        <p id="teacherEmail">
+            Loading...
+        </p>
+
+        <span>
+            Teacher
+        </span>
+
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="#notesSection">
+                📚 Notes
+            </a>
+        </li>
+
+        <li>
+            <a href="#assignmentSection">
+                📝 Assignments
+            </a>
+        </li>
+
+        <li>
+            <a href="#studentSection">
+                👨‍🎓 Students
+            </a>
+        </li>
+
+        <li>
+            <a href="#submissionSection">
+                📄 Submissions
+            </a>
+        </li>
+
+        <li>
+            <a href="#top">
+                👨‍🏫 Teacher
+            </a>
+        </li>
+
+    </ul>
+
+    <button id="darkBtn">
+        🌙 Dark Mode
+    </button>
+
+    <button id="logoutBtn">
+        Logout
+    </button>
+
+</div>
+
+<div class="main-content">
+
+    <h1>Teacher Dashboard</h1>
+
+    <div class="stats">
+
+        <div class="card">
+            <p>Notes</p>
+            <h2 id="noteCount">0</h2>
+        </div>
+
+        <div class="card">
+            <p>Assignments</p>
+            <h2 id="assignmentCount">0</h2>
+        </div>
+
+        <div class="card">
+            <p>Students</p>
+            <h2 id="studentCount">0</h2>
+        </div>
+
+        <div class="card">
+            <p>Submissions</p>
+            <h2 id="submissionCount">0</h2>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <h2 id="notesSection">Upload Notes</h2>
+
+    <form id="uploadForm">
+
+        <input
+        type="text"
+        id="title"
+        placeholder="Note Title"
+        required>
+
+        <input
+        type="text"
+        id="subject"
+        placeholder="Subject"
+        required>
+
+        <input
+        type="url"
+        id="pdfUrl"
+        placeholder="Google Drive PDF Link"
+        required>
+
+        <button type="submit">
+            Upload Note
+        </button>
+
+    </form>
+
+    <hr>
+
+    <h2>Uploaded Notes</h2>
+
+    <div id="uploadedNotes"></div>
+
+    <hr>
+
+    <h2 id="assignmentSection">
+        Create Assignment
+    </h2>
+
+    <form id="assignmentForm">
+
+        <input
+        type="text"
+        id="assignmentTitle"
+        placeholder="Assignment Title"
+        required>
+
+        <input
+        type="text"
+        id="assignmentSubject"
+        placeholder="Subject"
+        required>
+
+        <input
+        type="url"
+        id="assignmentPdf"
+        placeholder="Assignment PDF Link"
+        required>
+
+        <input
+        type="date"
+        id="deadline"
+        required>
+
+        <button type="submit">
+            Create Assignment
+        </button>
+
+    </form>
+
+    <hr>
+
+    <h2>Assignments</h2>
+
+    <div id="assignmentsContainer"></div>
+
+    <hr>
+
+    <h2 id="studentSection">
+        Student Management
+    </h2>
+
+    <div id="studentsContainer"></div>
+
+    <hr>
+
+    <h2 id="submissionSection">
+        Student Submissions
+    </h2>
+
+    <div id="submissionsContainer">
+
+        <p>
+            No submissions yet.
+        </p>
+
+    </div>
+
+</div>
+
+<script type="module" src="js/teacher-protect.js"></script>
+
+<script type="module" src="js/profile.js"></script>
+
+<script type="module" src="js/upload.js"></script>
+
+<script type="module" src="js/assignment.js"></script>
+
+<script type="module" src="js/student-management.js"></script>
+
+<script type="module" src="js/logout.js"></script>
+
+<script src="js/darkmode.js"></script>
+
+</body>
+</html>
