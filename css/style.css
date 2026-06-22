@@ -137,6 +137,33 @@ nav{
     margin-top:40px;
 }
 
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+    margin:10px;
+    transition:.3s;
+
+    background:white;
+    color:#2563eb;
+}
+
+.btn2{
+    background:linear-gradient(
+    135deg,
+    #2563eb,
+    #7c3aed
+    );
+    color:white;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
+}
+
 /* STATS */
 
 .stats{
