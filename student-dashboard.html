@@ -11,7 +11,7 @@
 
 </head>
 
-<body>
+<body id="top">
 
 <!-- Sidebar -->
 
@@ -26,20 +26,28 @@
         </h3>
 
         <p id="userRole">
-            Student Panel
+            Student
         </p>
 
     </div>
 
     <ul>
 
-        <li><a href="#dashboard">🏠 Dashboard</a></li>
+        <li>
+            <a href="#top">🏠 Dashboard</a>
+        </li>
 
-        <li><a href="#notesSection">📚 Notes</a></li>
+        <li>
+            <a href="#notesSection">📚 Notes</a>
+        </li>
 
-        <li><a href="#assignmentSection">📝 Assignments</a></li>
+        <li>
+            <a href="#assignmentSection">📝 Assignments</a>
+        </li>
 
-        <li><a href="#marksSection">📊 Marks</a></li>
+        <li>
+            <a href="#marksSection">📊 Marks</a>
+        </li>
 
     </ul>
 
@@ -55,107 +63,58 @@
 
 <!-- Main -->
 
-<div class="main-content" id="dashboard">
+<div class="main-content">
 
-    <!-- Topbar -->
-
-    <div class="topbar">
-
-        <div>
-            <h1>Student Dashboard</h1>
-            <p>Access Notes, Assignments & Results</p>
-        </div>
-
-        <div class="welcome-card">
-            <h3>Welcome Back 👋</h3>
-            <p id="userEmailTop">Loading...</p>
-        </div>
-
-    </div>
+    <h1>Student Dashboard</h1>
 
     <!-- Stats -->
 
     <div class="stats">
 
-        <div class="box blue-card">
+        <div class="box">
             <p>Total Notes</p>
             <h2 id="noteCount">0</h2>
         </div>
 
-        <div class="box green-card">
+        <div class="box">
             <p>Assignments</p>
             <h2 id="assignmentCount">0</h2>
         </div>
 
-        <div class="box orange-card">
+        <div class="box">
             <p>Your Marks</p>
             <h2 id="marksCount">0</h2>
         </div>
 
     </div>
 
-    <!-- Quick Actions -->
+    <!-- Notes -->
 
-    <div class="quick-actions">
+    <h2 id="notesSection">
+        📚 Available Notes
+    </h2>
 
-        <div class="action-card">
-            <h3>📚 Notes</h3>
-            <p>View all study materials</p>
-        </div>
+    <div id="notesContainer"></div>
 
-        <div class="action-card">
-            <h3>📝 Assignments</h3>
-            <p>Check pending assignments</p>
-        </div>
+    <hr>
 
-        <div class="action-card">
-            <h3>📊 Results</h3>
-            <p>View marks and performance</p>
-        </div>
+    <!-- Assignments -->
 
-    </div>
+    <h2 id="assignmentSection">
+        📝 Assignments
+    </h2>
 
-    <!-- Notes & Assignments -->
+    <div id="assignmentList"></div>
 
-    <div class="dashboard-grid">
-
-        <div class="dashboard-box">
-
-            <h2 id="notesSection">
-                📚 Available Notes
-            </h2>
-
-            <div id="notesContainer"></div>
-
-        </div>
-
-        <div class="dashboard-box">
-
-            <h2 id="assignmentSection">
-                📝 Assignments
-            </h2>
-
-            <div id="assignmentList"></div>
-
-        </div>
-
-    </div>
+    <hr>
 
     <!-- Marks -->
 
-    <div class="dashboard-grid">
+    <h2 id="marksSection">
+        📊 Your Marks
+    </h2>
 
-        <div class="dashboard-box">
-
-            <h2 id="marksSection">
-                📊 Your Marks
-            </h2>
-
-            <div id="marksList"></div>
-
-        </div>
-
-    </div>
+    <div id="marksList"></div>
 
 </div>
 
